@@ -6,12 +6,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "clean": "rimraf GTaskBoard/dist",
+    "clean": "rimraf dist",
     "build": "npm run clean && tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist --force"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "gh-pages": "^6.0.0",
